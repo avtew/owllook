@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Mulish;
+    src: url(./assets/fonts/Mulish-VariableFont_wght.ttf);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Mulish;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background-color: #669999;
+    box-sizing: border-box;
+}
+
+.logo {
+    min-width: 200px;
+    min-height: 80px;
+    background-image: url(./assets/img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.block-srch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
+}
+
+.srch-title {
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    font-variation-settings: 'wght' 900;
+}
+
+.srch-box {
+    position: relative;
+    width: 100%;
+}
+
+.srch-bar {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 70px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.line {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    height: 30px;
+    border-left: 1px solid #000000;
+    opacity: 0.5;
+}
+
+.srch-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/img/search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s;
+}
+
+.srch-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.span {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container-main {
+    flex: 1 1 auto;
+    padding: 50px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 410px;
+    height: 410px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #669999;
+    box-sizing: border-box;
+}
+
+.rss-logo {
+    width: 80px;
+    height: 30px;
+    transition: 0.3s;
+    filter: invert();
+}
+
+.rss-logo:hover {
+    filter: none;
+}
+
+.gh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.gh:hover {
+    filter: invert();
+}
+
+.gh-logo {
+    width: 20px;
+    height: 20px;
+}
